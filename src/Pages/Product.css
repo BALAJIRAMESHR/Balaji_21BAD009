@@ -1,0 +1,17 @@
+.product-card {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.product-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.product-card .MuiCardActionArea-root {
+    backface-visibility: hidden;
+}
+
+.product-card .MuiCardContent-root {
+    backface-visibility: hidden;
+}
